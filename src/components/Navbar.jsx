@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { FaShoppingCart, FaUser } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -24,32 +24,43 @@ const Navbar = () => {
 
           {/* Menu items */}
           <div className="navbar-menu">
-            <Link to="#">Shop</Link>
+            <div className="dropdown">
+              <select className="dropdown-select">
+                <option value="">Shop</option>
+                <option value="casual">Casual</option>
+                <option value="sport">Sport</option>
+              </select>
+            </div>
             <Link to="#">On Sale</Link>
             <Link to="#">New Arrivals</Link>
             <Link to="#">Brands</Link>
           </div>
 
-          {/* Search + Cart + User */}
           <div className="navbar-actions">
-            <input
-              type="text"
-              placeholder="Search for products..."
-              className="navbar-search"
-            />
+            {/* Search */}
+            <div className="search-container">
+              <FaSearch className="search-icon" />
+              <input
+                type="text"
+                placeholder="Search for products..."
+                className="search-input"
+              />
+            </div>
 
-            {/* Giỏ hàng */}
-            <Link to="/cart" className="navbar-cart">
-              <FaShoppingCart />
-              <span className="cart-count">3</span>
-            </Link>
+            {/* Cart + User */}
+            <div className="cart-user-container">
+              <Link to="/cart" className="navbar-cart">
+                <FaShoppingCart />
+                <span className="cart-count">3</span>
+              </Link>
 
-            {/* Người dùng */}
-            <Link to="/account" className="navbar-user">
-              <FaUser />
-            </Link>
+              <Link to="/account" className="navbar-user">
+                <FaUser />
+              </Link>
+            </div>
           </div>
         </div>
+        <hr className="nav-divider" />
       </nav>
     </>
   );

@@ -39,50 +39,50 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-columns">
-            <div className="footer-column">
-              <h4>Company</h4>
-              <ul>
-                <li>About</li>
-                <li>Features</li>
-                <li>Works</li>
-                <li>Career</li>
-              </ul>
-            </div>
-            <div className="footer-column">
-              <h4>Help</h4>
-              <ul>
-                <li>Customer Support</li>
-                <li>Delivery Details</li>
-                <li>Terms & Conditions</li>
-                <li>Privacy Policy</li>
-              </ul>
-            </div>
-            <div className="footer-column">
-              <h4>FAQ</h4>
-              <ul>
-                <li>Account</li>
-                <li>Manage Deliveries</li>
-                <li>Orders</li>
-                <li>Payments</li>
-              </ul>
-            </div>
-            <div className="footer-column">
-              <h4>Resources</h4>
-              <ul>
-                <li>Free eBooks</li>
-                <li>Development Tutorial</li>
-                <li>How to - Blog</li>
-                <li>Youtube Playlist</li>
-              </ul>
-            </div>
+          <div className="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li>About</li>
+              <li>Features</li>
+              <li>Works</li>
+              <li>Career</li>
+            </ul>
+          </div>
+          <div className="footer-column">
+            <h4>Help</h4>
+            <ul>
+              <li>Customer Support</li>
+              <li>Delivery Details</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div className="footer-column">
+            <h4>FAQ</h4>
+            <ul>
+              <li>Account</li>
+              <li>Manage Deliveries</li>
+              <li>Orders</li>
+              <li>Payments</li>
+            </ul>
+          </div>
+          <div className="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li>Free eBooks</li>
+              <li>Development Tutorial</li>
+              <li>How to - Blog</li>
+              <li>Youtube Playlist</li>
+            </ul>
           </div>
         </div>
 
         <hr className="footer-divider" />
 
         <div className="footer-bottom">
-          <p>Shop.co © 2000–2023, All Rights Reserved</p>
+          <div className="footer-copy">
+            <p>Shop.co © 2000–2023, All Rights Reserved</p>
+          </div>
           <div className="payment-icons">
             <img src="/visa-10.svg" alt="Visa" />
             <img src="/mastercard-modern-design-.svg" alt="Mastercard" />
