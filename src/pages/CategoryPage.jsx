@@ -14,6 +14,7 @@ const CategoryPage = () => {
 
   return (
     <div className="category-page">
+      <hr className="nav-divider" />
       {/* Breadcrumb */}
       <div className="breadcrumb">
         <Link to="/">Home</Link> &gt; <span>Casual</span>

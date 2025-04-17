@@ -1,0 +1,306 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.home-banner {
+  position: relative;
+  width: 100%;
+  height: 663px;
+}
+
+.home-banner-img {
+  width: 100%;
+  height: 663px;
+  
+}
+
+.home-banner-overlay {
+  position: absolute;
+  top: 20%;
+  left: 100px;
+  color: black;
+  width: 600px; /* hoặc auto + max-width */
+  max-width: 500px;
+}
+
+.home-banner-overlay h1 {
+  font-size: 64px; /* Tăng cỡ chữ */
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 500px;
+  font-family: Integral CF;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.home-banner-overlay p{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.home-banner-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 25px;
+  margin-top: 20px;
+  display: inline-block;
+  cursor: pointer;
+  width: 210;
+  border-radius: 62px;
+  gap: 12px;
+}
+
+.home-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.home-stats div h3 {
+  margin: 0;
+}
+
+.home-icon-star,
+.home-icon-star-2 {
+  position: absolute;
+  font-size: 24px;
+  color: black;
+}
+
+.home-icon-star {
+  top: 50px;
+  left: 800px;
+}
+
+.home-icon-star-2 {
+  top: 0px;
+  left: 1300px;
+}
+
+.home-brands {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  left: 100px;
+  background-color: black;
+}
+.home-brands img{
+  max-height: 40px; /* hoặc bạn có thể dùng max-width */
+  object-fit: contain;
+}
+
+.home-section-title {
+  font-family: Integral CF;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 40px;
+}
+
+.home-product-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.home-product-card {
+  text-align: center;
+}
+.home-product-card img {
+  padding: 10px 10px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.home-product-card h4 {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+}
+
+.home-product-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+
+.home-divider {
+  border-top: 1px solid #ddd;
+  margin: 40px 100px;
+}
+
+.home-viewall-button {
+  text-align: center;
+  margin: 20px 0;
+  background: white;
+  color: black;
+  padding: 10px 30px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  border-radius: 62px;
+  border: 2px solid #0000001A;
+}
+
+.home-style-section {
+  padding: 40px;
+  background-color: #F0F0F0;
+  border-radius: 20px;
+  margin: 0 100px; /* Cách trái và phải 100px */
+}
+
+.home-style-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: Integral CF;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.home-style-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.home-style-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* chia thành 10 phần để dễ chia tỉ lệ 3:7 */
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.home-style-item {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-style-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ảnh phủ kín, không méo, không dư trắng */
+}
+.home-style-item span {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: black;
+  background: rgba(255,255,255,0.7);
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+/* Chia tỉ lệ theo yêu cầu */
+.item-1 {
+  grid-column: span 4;
+  grid-row: 1;
+}
+
+.item-2 {
+  grid-column: span 6;
+  grid-row: 1;
+}
+
+.item-3 {
+  grid-column: span 6;
+  grid-row: 2;
+}
+
+.item-4 {
+  grid-column: span 4;
+  grid-row: 2;
+}
+
+
+.home-testimonials-section {
+  padding: 40px 100px;
+  background-color: #f2f2f2;
+}
+
+.home-testimonials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+.home-section-title2 {
+  font-family: Integral CF;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.arrow-group {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow-button {
+  background: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-testimonials {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.home-testimonial-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-testimonial-card p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.home-testimonial-card h5 {
+  font-weight: bold;
+  text-align: right;
+}
+
