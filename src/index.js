@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import './output.css';
 import './footer.css';
 import './home.css';
+import './cart.css';
+import './detail.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

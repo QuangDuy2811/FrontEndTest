@@ -3,6 +3,7 @@ import MainLayout from "./layout/MainLayout";
 import HomePage from "./pages/HomePage.jsx";
 import CartPage from "./pages/CartPage.jsx";
 import CategoryPage from "./pages/CategoryPage.jsx";
+import DetailPage from "./pages/DetailPage.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/category" element={<CategoryPage />} />
+          <Route path="/detail" element={<DetailPage />} />
         </Routes>
       </MainLayout>
     </Router>
