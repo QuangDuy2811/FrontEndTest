@@ -84,8 +84,7 @@
 .home-brands {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
-  left: 100px;
+  padding: 20px 80px;
   background-color: black;
 }
 .home-brands img{
@@ -107,7 +106,7 @@
 .home-product-list {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0;
+  margin: 20px 100px;
 }
 
 .home-product-card {

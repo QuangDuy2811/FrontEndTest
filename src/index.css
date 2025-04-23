@@ -41,7 +41,7 @@ code {
   width: 20px;
   height: 20px;
   top: 9px;
-  right: 40px;
+  right: 100px;
   color: #ffffff;
   cursor: pointer;
 }
@@ -224,7 +224,7 @@ code {
 
 /* CategoryPage */
 .category-page {
-  padding: 0 100px;
+  padding: 0px 100px;
   box-sizing: border-box;
   width: 100%;
 }
@@ -258,7 +258,7 @@ code {
 /* Layout */
 /* Filters */
 .filters {
-  width: 295px;
+  width: 270px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -385,7 +385,7 @@ input[type="range"]::-webkit-slider-thumb {
 /* Main content */
 .category-main {
   width: 100%;
-  padding-left: 40px;
+  padding-left: 10px;
   box-sizing: border-box;
   flex-grow: 1;
 }
