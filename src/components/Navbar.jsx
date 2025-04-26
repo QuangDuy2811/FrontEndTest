@@ -54,7 +54,7 @@ const Navbar = () => {
                 <span className="cart-count">3</span>
               </Link>
 
-              <Link to="/account" className="navbar-user">
+              <Link to="/login" className="navbar-user">
                 <FaUser />
               </Link>
             </div>
