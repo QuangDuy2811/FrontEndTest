@@ -28,6 +28,7 @@ code {
   position: relative;
   padding: 0 40px;
   width: 100%;
+  z-index: 50;
 }
 
 .header-top-text a {
@@ -51,6 +52,8 @@ code {
   background-color: #fff;
   padding: 20px 100px;
   width: 100%;
+  position: relative; /* Thêm */
+  z-index: 40; /* Thêm */
 }
 
 .navbar-container {
@@ -120,7 +123,6 @@ code {
   align-items: center;
   gap: 20px;
   margin-left: auto;
-  padding-left: 40px;
 }
 
 /* Link đến cart và user */
@@ -130,6 +132,37 @@ code {
   font-size: 18px;
   position: relative;
   text-decoration: none;
+}
+.navbar-user {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px; /* Điều chỉnh vị trí menu cách icon */
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+  display: block;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: black;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
 }
 
 /* Số lượng sản phẩm trong giỏ */
@@ -170,12 +203,6 @@ code {
   }
 }
 
-/* Actions */
-.navbar-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
 
 .navbar-search {
   display: none;
@@ -190,14 +217,6 @@ code {
     width: 256px;
     font-size: 14px;
   }
-}
-
-.navbar-cart,
-.navbar-user {
-  font-size: 20px;
-  color: #1f2937;
-  text-decoration: none;
-  position: relative;
 }
 
 .navbar-cart:hover,

@@ -85,7 +85,7 @@ const CartPage = () => {
           {/* Promo Code - thêm icon vào đây */}
           <div className="promo-code">
             <img
-              src="/path-to-your-icon/tag-icon.png" // đổi path cho đúng với thư mục public
+              src="/tag.png" // đổi path cho đúng với thư mục public
               alt="tag icon"
               style={{ width: "24px", height: "24px" }}
             />

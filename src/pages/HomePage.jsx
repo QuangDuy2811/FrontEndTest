@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { FiStar } from "react-icons/fi";
 
 const Home = () => {
+  const [newArrivals, setNewArrivals] = useState([]);
+  const [topSelling, setTopSelling] = useState([]);
+
+  // Gọi API khi trang load
+  useEffect(() => {
+    axios.get("http://localhost:5000/api/products/new-arrivals")
+      .then(res => setNewArrivals(res.data))
+      .catch(err => console.error("Error fetching new arrivals:", err));
+
+    axios.get("http://localhost:5000/api/products/top-selling")
+      .then(res => setTopSelling(res.data))
+      .catch(err => console.error("Error fetching top selling:", err));
+  }, []);
   return (
     <div className="home-container">
       {/* Banner Section */}
@@ -42,26 +56,13 @@ const Home = () => {
       {/* New Arrivals */}
       <h2 className="home-section-title">New Arrivals</h2>
       <div className="home-product-list">
-        <div className="home-product-card">
-          <img src="/imgproduct/image.png" alt="Black Denim Jacket" />
-          <h4>Black Denim Jacket</h4>
-          <p>$120</p>
-        </div>
-        <div className="home-product-card">
-          <img src="/imgproduct/image copy.png" alt="White Hoodie" />
-          <h4>White Hoodie</h4>
-          <p>$95</p>
-        </div>
-        <div className="home-product-card">
-          <img src="/imgproduct/image copy 2.png" alt="Retro Sunglasses" />
-          <h4>Retro Sunglasses</h4>
-          <p>$45</p>
-        </div>
-        <div className="home-product-card">
-          <img src="/imgproduct/image copy 3.png" alt="Retro Sunglasses" />
-          <h4>Retro Sunglasses</h4>
-          <p>$45</p>
-        </div>
+        {newArrivals.map(product => (
+          <div key={product.id} className="home-product-card">
+            <img src={product.image_path} alt={product.name} />
+            <h4>{product.name}</h4>
+            <p>${product.price}</p>
+          </div>
+        ))}
       </div>
       <div className="home-viewall-button">View All</div>
       <div className="home-divider"></div>
@@ -69,28 +70,16 @@ const Home = () => {
       {/* Top Selling */}
       <h2 className="home-section-title">Top Selling</h2>
       <div className="home-product-list">
-        <div className="home-product-card">
-          <img src="/imgproduct/image copy 4.png" alt="Minimal T-Shirt" />
-          <h4>Minimal T-Shirt</h4>
-          <p>$49</p>
-        </div>
-        <div className="home-product-card">
-          <img src="/imgproduct/image copy 5.png" alt="Slim Fit Jeans" />
-          <h4>Slim Fit Jeans</h4>
-          <p>$89</p>
-        </div>
-        <div className="home-product-card">
-          <img src="/imgproduct/image copy 6.png" alt="Sporty Sneakers" />
-          <h4>Sporty Sneakers</h4>
-          <p>$110</p>
-        </div>
-        <div className="home-product-card">
-          <img src="/imgproduct/image copy 7.png" alt="Sporty Sneakers" />
-          <h4>Sporty Sneakers</h4>
-          <p>$110</p>
-        </div>
+        {topSelling.map(product => (
+          <div key={product.id} className="home-product-card">
+            <img src={product.image_path} alt={product.name} />
+            <h4>{product.name}</h4>
+            <p>${product.price}</p>
+          </div>
+        ))}
       </div>
       <div className="home-viewall-button">View All</div>
+
 
       {/* Browse by Style */}
       <div className="home-style-section">
